@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Inter;
+    font-weight: 200;
+    src: url(../fonts/Inter-Thin.ttf) format("ttf");
+  }
+
+  @font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url(../fonts/Inter-Regular.ttf) format("ttf");
+  }
+}
