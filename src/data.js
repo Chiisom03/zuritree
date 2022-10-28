@@ -1,8 +1,5 @@
 export const info = [
   {
-    username: "lucy",
-  },
-  {
     name: "twitter",
     twitter: "twitter.com",
   },

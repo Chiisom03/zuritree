@@ -19,9 +19,9 @@ const App = () => {
         {info.map((link, id) => (
           <button
             key={id}
-            className="mb-6 py-6 px-8 h-[68px] w-[343px] lg:w-[1152px] lg:h-[72px] bg-zuri-gray-200 rounded-lg font-medium"
+            className="mb-6 py-6 px-8 h-[68px] w-[343px] lg:w-[1152px] lg:h-[72px] bg-zuri-gray-200 rounded-lg font-medium hover:bg-zuri-gray-300"
           >
-            {link.name}👋
+            {link.name}
           </button>
         ))}
         <div className="flex items-center">
