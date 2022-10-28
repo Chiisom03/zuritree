@@ -24,6 +24,10 @@ const App = () => {
             {link.name}👋
           </button>
         ))}
+        <div className="flex items-center">
+          <img className="h-6 w-6 mr-[26px]" src={slack} alt="slack-logo" />
+          <img className="h-6 w-6" src={github} alt="github-icon" />
+        </div>
       </main>
     </div>
   );
