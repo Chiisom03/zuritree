@@ -16,6 +16,14 @@ const App = () => {
           />
           <p className="font-bold">Peter Jackson</p>
         </div>
+        {info.map((link, id) => (
+          <button
+            key={id}
+            className="mb-6 py-6 px-8 h-[68px] w-[343px] lg:w-[1152px] lg:h-[72px] bg-zuri-gray-200 rounded-lg font-medium"
+          >
+            {link.name}👋
+          </button>
+        ))}
       </main>
     </div>
   );
