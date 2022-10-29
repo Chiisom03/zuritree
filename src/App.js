@@ -1,4 +1,6 @@
 import React from "react";
+import share from "./assets/images/share-icon.png";
+import dots from "./assets/images/dots.png";
 import slack from "./assets/svgs/slack.svg";
 import github from "./assets/svgs/github.svg";
 import zuri from "./assets/images/zuri.png";
@@ -9,7 +11,21 @@ const App = () => {
   return (
     <div className="font-sans mx-auto py-16 h-screen">
       <main className="px-8 flex flex-col justify-center items-center relative">
-        <div className="h-10 w-10 rounded-full border border-dashed border-zuri-gray-300 absolute -top-5 right-4 md:right-52 hover:bg-zuri-gray-200"></div>
+        <a
+          href="/"
+          className="h-10 w-10 rounded-full border border-dashed border-zuri-gray-300 absolute -top-5 right-4 md:right-52 hover:bg-zuri-gray-200 grid place-items-center"
+        >
+          <img
+            className="hidden md:block w-[15.19px] h-[14.02px]"
+            src={share}
+            alt="share-icon"
+          />
+          <img
+            className="md:hidden w-[13.33px] h-[3.67px]"
+            src={dots}
+            alt="share-icon"
+          />
+        </a>
         <div className="mb-14 flex flex-col justify-center items-center ">
           <img
             id="profile_img"
