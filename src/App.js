@@ -26,7 +26,7 @@ const App = () => {
         {info.map((link) => (
           <a
             key={link.id}
-            className="mb-6 py-6 px-8 h-[68px] w-[343px] lg:w-[1152px] lg:h-[72px] bg-zuri-gray-200 rounded-lg font-medium hover:bg-zuri-gray-300 text-center text-[14px] md:text-[18px]"
+            className="mb-6 py-6 px-8 h-[68px] w-[343px] lg:w-[1152px] lg:h-[72px] bg-zuri-gray-200 rounded-lg font-medium hover:bg-zuri-gray-300 text-center text-[14px] md:text-[18px] outline-none focus:ring-[1px] focus:ring-zuri-gray focus:bg-zuri-gray-200"
             target="blank"
             href={link.link}
           >
@@ -39,7 +39,7 @@ const App = () => {
         </div>
       </main>
       <footer className="w-full h-40">
-        <div className="md:mx-20 md:flex md:justify-between mt-12 border-t py-12 mx-4">
+        <div className="md:mx-20 md:flex md:justify-between mt-12 border-t border-t-zuri-gray-200 py-12 mx-4">
           <img
             src={zuri}
             alt="zuri-internship"
