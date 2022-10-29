@@ -22,7 +22,7 @@ export const info = [
   {
     id: "pitch",
     name: "Background Check for Coders",
-    link: "linkedin.com",
+    link: "https://background.zuri.team",
   },
   {
     id: "book__design",
