@@ -8,11 +8,28 @@ import ingressive from "./assets/images/ingressive.png";
 import { info } from "./data";
 
 const App = () => {
+  const text = "hello 👋",
+    title = "Peter Nwibo zuritree",
+    url = "https://zuritree.netlify.app/";
+  const details = { text, title, url };
+
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share(details);
+      } catch (error) {
+        console.log(`Oops! ${error}, try again`);
+      }
+    } else {
+      alert("your browser doesn't support sharing");
+    }
+  };
+
   return (
     <div className="font-sans mx-auto py-16 h-screen">
       <main className="px-8 flex flex-col justify-center items-center relative">
-        <a
-          href="/"
+        <div
+          onClick={() => handleShare()}
           className="h-10 w-10 rounded-full border border-dashed border-zuri-gray-300 absolute -top-5 right-4 md:right-52 hover:bg-zuri-gray-200 grid place-items-center"
         >
           <img
@@ -25,7 +42,8 @@ const App = () => {
             src={dots}
             alt="share-icon"
           />
-        </a>
+        </div>
+
         <div className="mb-14 flex flex-col justify-center items-center ">
           <img
             id="profile_img"
