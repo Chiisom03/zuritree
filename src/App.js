@@ -19,6 +19,9 @@ const App = () => {
           <p id="twitter" className="font-bold text-[18px] md:text-xl">
             Peter Nwibo
           </p>
+          <p id="slack" className="hidden font-bold text-[18px] md:text-xl">
+            Peter Nwibo
+          </p>
         </div>
         {info.map((link) => (
           <a
