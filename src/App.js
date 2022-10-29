@@ -30,7 +30,11 @@ const App = () => {
           <img className="h-6 w-6" src={github} alt="github-icon" />
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <img src="" alt="zuri-internship" />
+        <p>HNG Internship 9 Frontend Task</p>
+        <img src="" alt="zuri-internship" />
+      </footer>
     </div>
   );
 };
