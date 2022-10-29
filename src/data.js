@@ -1,18 +1,26 @@
 export const info = [
   {
     name: "twitter",
-    twitter: "twitter.com",
+    link: "https://twitter.com/Chiisom03",
   },
   {
-    name: "github",
-    github: "github.com",
+    name: "Zuri Team",
+    link: "https://training.zuri.team/",
   },
   {
-    name: "linkedin",
-    linkedin: "linkedin.com",
+    name: "Zuri Books",
+    link: "https://books.zuri.team/",
   },
   {
-    name: "linkedin",
-    linkedin: "linkedin.com",
+    name: "Python Books",
+    link: "https://books.zuri.team/python-for-beginners?ref_id=chiisom",
+  },
+  {
+    name: "Background Check for Coders",
+    link: "linkedin.com",
+  },
+  {
+    name: "Design Books",
+    link: "https://books.zuri.team/design-rules",
   },
 ];
