@@ -10,13 +10,11 @@ const App = () => {
     <div className="font-sans mx-auto py-16 h-screen">
       <main className="px-8 flex flex-col justify-center items-center ">
         <div className="mb-14 flex flex-col justify-center items-center ">
-          <a href="https://github.com/Chiisom03">
-            <img
-              className="object-cover bg-no-repeat h-[88px] w-[88px] rounded-full mb-6"
-              src="https://pbs.twimg.com/profile_images/1548036397503721473/EiDxIeTt_400x400.jpg"
-              alt="chiisom"
-            />
-          </a>
+          <img
+            className="object-cover bg-no-repeat h-[88px] w-[88px] rounded-full mb-6"
+            src="https://pbs.twimg.com/profile_images/1548036397503721473/EiDxIeTt_400x400.jpg"
+            alt="chiisom"
+          />
           <p className="font-bold text-[18px] md:text-xl">Peter Nwibo</p>
         </div>
         {info.map((link, id) => (
