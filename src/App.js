@@ -11,15 +11,18 @@ const App = () => {
       <main className="px-8 flex flex-col justify-center items-center ">
         <div className="mb-14 flex flex-col justify-center items-center ">
           <img
+            id="profile_img"
             className="object-cover bg-no-repeat h-[88px] w-[88px] rounded-full mb-6"
             src="https://pbs.twimg.com/profile_images/1548036397503721473/EiDxIeTt_400x400.jpg"
             alt="chiisom"
           />
-          <p className="font-bold text-[18px] md:text-xl">Peter Nwibo</p>
+          <p id="twitter" className="font-bold text-[18px] md:text-xl">
+            Peter Nwibo
+          </p>
         </div>
-        {info.map((link, id) => (
+        {info.map((link) => (
           <a
-            key={id}
+            key={link.id}
             className="mb-6 py-6 px-8 h-[68px] w-[343px] lg:w-[1152px] lg:h-[72px] bg-zuri-gray-200 rounded-lg font-medium hover:bg-zuri-gray-300 text-center text-[14px] md:text-[18px]"
             target="blank"
             href={link.link}
