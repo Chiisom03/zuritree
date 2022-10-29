@@ -4,6 +4,9 @@ const defalutFont = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    screen: {
+      sm: "320px",
+    },
     extend: {
       fontFamily: {
         sans: ["Inter", ...defalutFont.fontFamily.sans],
