@@ -35,7 +35,7 @@ const App = () => {
         </div>
       </main>
       <footer className="w-full h-40">
-        <div className="md:mx-auto px-4 md:flex md:justify-around my-12">
+        <div className="md:mx-20 md:flex md:justify-between mt-12 border-t py-12 mx-4">
           <img
             src={zuri}
             alt="zuri-internship"
