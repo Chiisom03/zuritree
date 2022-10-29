@@ -8,7 +8,8 @@ import { info } from "./data";
 const App = () => {
   return (
     <div className="font-sans mx-auto py-16 h-screen">
-      <main className="px-8 flex flex-col justify-center items-center ">
+      <main className="px-8 flex flex-col justify-center items-center relative">
+        <div className="h-10 w-10 rounded-full border border-dashed border-zuri-gray-300 absolute -top-5 right-4 md:right-52 hover:bg-zuri-gray-200"></div>
         <div className="mb-14 flex flex-col justify-center items-center ">
           <img
             id="profile_img"
