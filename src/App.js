@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="font-sans mx-auto py-16 h-screen">
+    <div className="font-sans mx-auto md:mx-20 py-16 h-screen">
       <main className="px-8 flex flex-col justify-center items-center relative">
         <Share />
         <Header />
