@@ -1,6 +1,6 @@
 export const info = [
   {
-    id: "twitter",
+    id: "twitter__btn",
     name: "Twitter Link",
     link: "https://twitter.com/Chiisom03",
   },
