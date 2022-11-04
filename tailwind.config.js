@@ -22,6 +22,19 @@ module.exports = {
         d2xl: ["4.5rem", { lineHeight: "5.625rem" }],
       },
       colors: {
+        "z-pry":{
+          DEFAULT: '#53B1FD',
+          25: "#F5FAFF",
+          50: "#EFF8FF",
+          100: "#D1E9FF",
+          200: "#B2DDFF",
+          300: "#84CAFF",
+          500: "#2E90FA",
+          600: "#1570EF",
+          700: "#175CD3",
+          800: "#1849A9",
+          900: "#194185",
+        },
         "zuri-gray": {
           DEFAULT: "#98A2B3",
           25: "#FCFCFD",
