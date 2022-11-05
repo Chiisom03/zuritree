@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Contact = () => {
   const name = "Peter";
@@ -6,6 +6,7 @@ const Contact = () => {
   const initValues = { firstname: "", lastname: "", email: "", message: "" };
   const [formValues, setFormValues] = useState(initValues);
   const [formError, setFormError] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e) => {
     const { firstname, value } = e.target;
@@ -15,17 +16,35 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormError(vaidateForm(formValues));
+    setIsSubmit(true);
   };
 
+  useEffect(() => {
+    console.log(formError);
+    if (Object.keys(formError).length === 0 && isSubmit)
+      console.log(formValues);
+  }, [formError]);
+
   function vaidateForm(values) {
-    const errors = {};
+    const error = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     const { firstname, lastname, email, message } = values;
-    if (!firstname) errors.firstname = "Please enter your firstname";
-    if (!lastname) errors.lastname = "Please enter your lastname";
-    if (!email) errors.email = "please enter a valid email";
-    if (!message) errors.message = "Please enter a message";
-    return errors;
+    if (!firstname) error.firstname = "Please enter your firstname";
+    if (!lastname) {
+      error.lastname = "Please enter your lastname";
+    }
+    if (!email) {
+      error.email = "please enter a valid email";
+    } else if (!regex.test(values.email)) {
+      error.email = "Your email format is't valid!";
+    }
+    if (!message) {
+      error.message = "Please enter a message";
+    } else if (message.length < 4) {
+      error.message = "Your text is too short";
+    }
+    // error.color = "focus:ring-red-200";
+    return error;
   }
   return (
     <div className="relative px-4 md:max-w-[720px] h-[616px] mx-auto mt-16 md:mt-[96px] mb-[280px] md:mb-[188px]">
@@ -45,7 +64,7 @@ const Contact = () => {
             value={initValues.firstname}
             className="input-style md:col-span-6"
             placeholder="Enter your first name"
-            onChange={handleChange}
+            onChange={() => handleChange()}
           />
         </label>
         <label className="label-style">
@@ -56,7 +75,7 @@ const Contact = () => {
             value={initValues.lastname}
             className="input-style md:col-span-6"
             placeholder="Enter your last name"
-            onChange={handleChange}
+            onChange={() => handleChange()}
           />
         </label>
         <label className="label-long-style">
@@ -67,7 +86,7 @@ const Contact = () => {
             value={initValues.email}
             className="input-style col-span-12"
             placeholder="yourname@email.com"
-            onChange={handleChange}
+            onChange={() => handleChange()}
           />
         </label>
         <label className="label-long-style">
@@ -75,9 +94,9 @@ const Contact = () => {
           <textarea
             id="message"
             value={initValues.message}
-            className="col-span-12 py-3 px-[14px] w-full h-[132px] input-style"
+            className="col-span-12 py-3 px-[14px] w-full h-[132px] input-style focus:ring-4"
             placeholder="Send me a message and I'll reply you as soon as possible..."
-            onChange={handleChange}
+            onChange={() => handleChange()}
           />
         </label>
         <span className="flex items-start md:items-center mb-8 col-span-12">
