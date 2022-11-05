@@ -16,7 +16,7 @@ const Contact = () => {
           First name
           <input
             name="firstname"
-            id="firstname"
+            id="first_name"
             className="input-style md:col-span-6"
             placeholder="Enter your first name"
           />
@@ -25,6 +25,7 @@ const Contact = () => {
           Last name
           <input
             name="lastname"
+            id="last_name"
             className="input-style md:col-span-6"
             placeholder="Enter your last name"
           />
@@ -33,6 +34,7 @@ const Contact = () => {
           Email
           <input
             name="email"
+            id="email"
             className="input-style col-span-12"
             placeholder="yourname@email.com"
           />
@@ -40,6 +42,7 @@ const Contact = () => {
         <label className="label-long-style">
           Message
           <textarea
+            id="message"
             className="col-span-12 py-3 px-[14px] w-full h-[132px] input-style"
             placeholder="Send me a message and I'll reply you as soon as possible..."
           />
@@ -55,6 +58,7 @@ const Contact = () => {
           </p>
         </span>
         <button
+          id="btn__submit"
           type="submit"
           className="py-3 px-5 bg-z-pry-600 text-white rounded-lg w-full col-span-12 font-semibold outline-none focus:ring-4"
         >
