@@ -2,8 +2,9 @@ import React from "react";
 
 const Contact = () => {
   const name = "Peter";
+
   return (
-    <div className="px-4 md:max-w-[720px] h-[616px] mx-auto mt-16 md:mt-[96px] mb-[188px]">
+    <div className="px-4 md:max-w-[720px] h-[616px] mx-auto mt-16 md:mt-[96px] mb-[280px] md:mb-[188px]">
       <h2 className="font-semibold text-4xl mb-5 text-zuri-gray-900">
         Contact Me
       </h2>
@@ -15,6 +16,7 @@ const Contact = () => {
           First name
           <input
             name="firstname"
+            id="firstname"
             className="input-style md:col-span-6"
             placeholder="Enter your first name"
           />

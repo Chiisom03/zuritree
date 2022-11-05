@@ -30,7 +30,7 @@ export const info = [
     link: "https://books.zuri.team/design-rules",
   },
   {
-    id: "btn__contact",
+    id: "contact",
     name: "Contact",
     link: "\\contact",
   },
