@@ -2,16 +2,17 @@ import React from "react";
 
 const Contact = () => {
   const name = "Peter";
+  
 
   return (
-    <div className="px-4 md:max-w-[720px] h-[616px] mx-auto mt-16 md:mt-[96px] mb-[280px] md:mb-[188px]">
+    <div className="relative px-4 md:max-w-[720px] h-[616px] mx-auto mt-16 md:mt-[96px] mb-[280px] md:mb-[188px]">
       <h2 className="font-semibold text-4xl mb-5 text-zuri-gray-900">
         Contact Me
       </h2>
       <p className="text-lg md:text-xl mb-12 text-zuri-gray-600">
         Hi there, contact me to ask me about anything you have in mind.
       </p>
-      <form className="grid gap-y-2 gap-x-2">
+      <form className="grid gap-y-6 gap-x-6">
         <label className="label-style">
           First name
           <input
