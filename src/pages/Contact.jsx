@@ -46,7 +46,3 @@ const Contact = () => {
 };
 
 export default Contact;
-//  {/* <Input label="First Name" placeholder="Enter your first name" />
-//         <Input label="Last Name" placeholder="Enter your last name" />
-//         <Input label="Email" placeholder="yourname@email.com" />
-//         <Input label="Message" isTextArea={true} /> */}
