@@ -15,7 +15,14 @@
     src: url(../fonts/Inter-Regular.ttf) format("ttf");
   }
 
-  .input-style{
-    @apply border px-[14px] py-[10px] w-full rounded-lg border-zuri-gray-300 outline-none focus:ring-[1px] col-span-12 mb-6
+  .input-style {
+    @apply border px-[14px] py-[10px] w-full rounded-lg border-zuri-gray-300 outline-none focus:ring-[1px]
+  }
+
+  .label-style {
+    @apply col-span-12 mb-6 md:col-span-6
+  }
+  .label-long-style {
+    @apply col-span-12 mb-6
   }
 }
